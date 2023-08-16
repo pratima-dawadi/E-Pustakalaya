@@ -2,6 +2,47 @@
 {% load static %}
 {% block title %} E-Pustakalaya{% endblock %}
 {% block css %}
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #3d3b3b;
+  }
+  .container-fluid {
+      text-align: center;
+      padding: 30px;
+      background-color: #000000;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  .display-5 {
+      font-weight: bold;
+      color: #ffffff;
+  }
+  .fs-4 {
+      color: #ffffff;
+  }
+  .btn-primary {
+      background-color: #000000;
+      border-color: #000000;
+  }
+  .btn-primary:hover {
+      background-color: #000000;
+      border-color: #000000;
+  }
+  .col-lg-6 img {
+      width: 50%;
+      height: 50%;
+      margin: 0 auto;
+  }
+  .btn-outline-primary {
+      border-color: #000000;
+      color: #000000;
+  }
+  .btn-outline-primary:hover {
+      background-color: #000000;
+      color: #ffffff;
+  }
+</style>
 {% endblock %}
 {% block body %}
 <div class="p-4 bg-light">
@@ -15,7 +56,7 @@
   <div class="row">
 
     <div class="col-lg-6">
-      <img src="{% static 'admin.png' %}" width="50%" height="50%" alt=""><br><br>
+      <img src="{% static 'admin1.jpg' %}" width="50%" height="50%" alt=""><br><br>
         <a class="btn btn-outline-primary btn-lg" style="text-align:center" href="/admin_login/">Admin</a>
     </div>
 

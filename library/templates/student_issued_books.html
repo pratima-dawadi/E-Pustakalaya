@@ -2,6 +2,23 @@
 {% load static %}
 {% block title %} All Students List {% endblock %}
 {% block css %}
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap5.min.css">
+<style>
+    .container {
+        padding: 20px;
+    }
+    .table {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .table th,
+    .table td {
+        text-align: center;
+    }
+    .table th {
+        background-color: #f8f9fa;
+    }
+</style>
 {% endblock %}
 {% block body %}
 <div class="container mt-4">

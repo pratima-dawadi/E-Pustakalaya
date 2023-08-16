@@ -11,6 +11,67 @@
 
     <title>{% block title %} {% endblock %}</title>
     {% block css %}
+    <style>
+      /* Body Styles */
+      body {
+          font-family: Arial, sans-serif;
+          background-color: #000000;
+          color: #000000;
+      }
+  
+      /* Navbar Styles */
+      .navbar {
+          background-color: #000000;
+      }
+  
+      .navbar-brand, .nav-link {
+          color: #ffffff;
+      }
+  
+      /* Page Heading Styles */
+      h1, h2, h3, h4, h5, h6 {
+          color: #000000;
+      }
+  
+      /* Container Styles */
+      .container {
+          padding: 20px;
+      }
+  
+      /* Button Styles */
+      .btn-primary {
+          background-color: #000000;
+          border-color: #000000;
+      }
+  
+      .btn-primary:hover {
+          background-color: #333333;
+          border-color: #333333;
+      }
+  
+      /* Table Styles */
+      .table {
+          color: #000000;
+      }
+  
+      /* Footer Styles */
+      footer {
+          background-color: #000000;
+          color: #ffffff;
+          text-align: center;
+          padding: 10px;
+      }
+  
+      /* Links Styles */
+      a {
+          color: #000000;
+          text-decoration: none;
+      }
+  
+      a:hover {
+          color: #333333;
+        }
+  </style>
     {% endblock %}
   </head>
   <body>
@@ -57,21 +118,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
     <script src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.html5.min.js"></script>
-
-    {% block js %}
-    <script>
-      $(document).ready(function () {
-        $('#example').DataTable({
-          dom: 'Bfrtip',
-          buttons: [
-            'copyHtml5',
-            'excelHtml5',
-            'csvHtml5',
-            'pdfHtml5'
-          ]
-        });
-      });
-    </script>
-    {% endblock %}
   </body>
 </html>
