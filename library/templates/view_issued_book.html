@@ -2,50 +2,55 @@
 {% load static %}
 {% block title %} All Students List {% endblock %}
 {% block css %}
+{{ block.super }}
+{{ block.super }}
+
 <style>
     /* Container Styles */
     .container {
         padding: 20px;
     }
-
+    
     /* Page Heading Styles */
     h1 {
         text-align: center;
         margin-bottom: 20px;
     }
-
+    
     /* Table Styles */
     .table {
         border: 1px solid #dee2e6;
+        background-color: white; /* Added background color */
     }
-
+    
     .table th, .table td {
         border: 1px solid #dee2e6;
         padding: 12px;
         text-align: center;
     }
-
+    
     .table-hover tbody tr:hover {
         background-color: #f8f9fa;
     }
-
+    
     /* Button Styles */
-    .btn-danger {
+    .btn-danger:hover {
+        color: #d5b2b2;
         background-color: #ffffff;
         border-color: #000000;
-        color: #000000;
     }
-
-    .btn-danger:hover {
+    
+    .btn-danger {
         background-color: #000000;
         border-color: #ffffff;
         color: #ffffff;
     }
+    
 </style>
 {% endblock %}
 {% block body %}
 <div class="container mt-4">
-    <h1 class="text-center"><u>All Issued Books</u></h1>
+    <h1 class="text-center" style="color: white;"><u>All Issued Books</u></h1>
     <table class="table table-hover" id="example">
         <thead>
             <tr class="text-center">

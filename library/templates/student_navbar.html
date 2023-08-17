@@ -11,21 +11,42 @@
 
     <title>{% block title %} {% endblock %}</title>
     {% block css %}
+    
     <style>
-      /* Body Styles */
       body {
-          font-family: Arial, sans-serif;
-          background-color: #000000;
-          color: #000000;
+        font-family: Arial, sans-serif;
+        background-color: #3d3b3b;
       }
-  
-      /* Navbar Styles */
       .navbar {
-          background-color: #000000;
+        background-color: black; /* Change background color to black */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
-  
-      .navbar-brand, .nav-link {
-          color: #ffffff;
+      .navbar-brand {
+        font-weight: bold;
+        
+      }
+      .navbar-toggler-icon {
+        background-color: #000000;
+      }
+      .nav-link {
+        font-weight: bold;
+        color: white !important;
+      }
+      .nav-link:hover {
+        color: white !important;
+      }
+      .dropdown-menu {
+        background-color: #000000;
+        border: none;
+      }
+      .dropdown-item {
+        color: white !important;
+      }
+      .dropdown-item:hover {
+        background-color: #f8f9fa;
+        color: white !important;
       }
   
       /* Page Heading Styles */
@@ -75,9 +96,9 @@
     {% endblock %}
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-black sticky-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">E-Pustakalaya</a>
+          <a class="navbar-brand" href="#" style="color: white">E-Pustakalaya</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>

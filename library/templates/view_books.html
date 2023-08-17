@@ -2,6 +2,8 @@
 {% load static %}
 {% block title %} E-Pustakalaya{% endblock %}
 {% block css %}
+{{ block.super }}
+
 <style>
     /* Body Styles */
     body {
@@ -82,6 +84,8 @@
 </style>
 {% endblock %}
 {% block body %}
+{{ block.super }}
+
 <div class="container mt-4">
     <h1 class="text-center"><u>All Books List</u></h1>
     <table class="table table-hover" id="example">

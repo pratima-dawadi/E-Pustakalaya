@@ -2,6 +2,8 @@
 {% load static %}
 {% block title %} E-Pustakalaya {% endblock %}
 {% block css %}
+{{ block.super }}
+
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -74,6 +76,7 @@
 </form>
 {% endblock %}
 {% block js %}
+
 <script>
     {% if alert %}
     alert("Book is added successfully.")
@@ -81,3 +84,4 @@
     {% endif %}
 </script>
 {% endblock %}
+{{ block.super }}
